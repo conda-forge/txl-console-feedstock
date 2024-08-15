@@ -1,5 +1,5 @@
 {% set name = "txl-console" %}
-{% set version = "0.2.15" %}
+{% set version = "0.2.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txl_console-{{ version }}.tar.gz
-  sha256: b5f376912fbb11cd1ca4bab69a3a89c5ceb84da54c378ce6c17a08707ec6e667
+  sha256: 458e2e1b4feab7277065650777fe16d2ae207cecead279c98144e04b4b4c811f
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >=3.10
-    - txl
+    - txl >=0.2.18,<0.3.0
     - jupyter_ydoc >=2.0.0,<3.0.0
 
 test:
