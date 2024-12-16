@@ -1,13 +1,13 @@
 {% set name = "txl-console" %}
-{% set version = "0.2.16" %}
+{% set version = "0.2.17" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txl_console-{{ version }}.tar.gz
-  sha256: 458e2e1b4feab7277065650777fe16d2ae207cecead279c98144e04b4b4c811f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_console-{{ version }}.tar.gz
+  sha256: 53db18542e67b6e9dbcc602c5c842a068d56d8d5d14ae75a8ac6d419c66d1bd9
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.10
     - txl >=0.2.18,<0.3.0
-    - jupyter_ydoc >=2.0.0,<3.0.0
+    - jupyter_ydoc >=3.0.2,<4.0.0
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
