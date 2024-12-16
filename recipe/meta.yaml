@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.10
     - txl >=0.2.18,<0.3.0
-    - jupyter_ydoc >=2.0.0,<3.0.0
+    - jupyter_ydoc >=3.0.2,<4.0.0
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
